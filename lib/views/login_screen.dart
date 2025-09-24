@@ -40,7 +40,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height:screenHeight* 0.04),
               Center(
                 child: Image.asset(
-                  'assets/images/health.png',
+                  'assets/images/splash.png',
                   height: screenHeight* 0.20,
                 ),
               ),
