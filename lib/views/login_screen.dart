@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 
 import '../controllers/login_controller.dart';
 import '../utils/common_style.dart';
+import 'dashboard_screen.dart';
 //
 // import '../common/common_style.dart';
 // import '../controller/login_controller.dart';
@@ -121,12 +122,15 @@ class LoginScreen extends StatelessWidget {
                   child: ElevatedButton(
 
                     onPressed: () {
-                      controller.loginUser(
-                        strEmail: emailController.text.trim(),
-                        strPassword: passwordController.text.trim(),
-                        strDeviceID: deviceId,
-                        strDeviceType: deviceType,
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DashboardScreen()),
                       );
+                      // controller.loginUser(
+                      //   strEmail: emailController.text.trim(),
+                      //   strPassword: passwordController.text.trim(),
+                      //
+                      // );
                     },
                     style: ElevatedButton.styleFrom(
 

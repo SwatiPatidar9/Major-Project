@@ -21,8 +21,7 @@ class LoginController extends GetxController {
   Future<void> loginUser({
     required String strEmail,
     required String strPassword,
-    required String strDeviceID,
-    required String strDeviceType,
+
   }) async {
     isLoading.value = true;
 
@@ -30,7 +29,7 @@ class LoginController extends GetxController {
     await Future.delayed(Duration(seconds: 2));
 
     // Mocked response
-    if (strEmail == "test@example.com" && strPassword == "123456") {
+    if (strEmail == "swati@gmail.com" && strPassword == "12345678") {
       loginResponse.value = LoginResponse(
         status: true,
         message: "Login successful",
