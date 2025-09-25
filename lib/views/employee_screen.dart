@@ -76,7 +76,8 @@ class _EmployeeTablePageState extends State<EmployeeTablePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Employee List"),
-        backgroundColor: Colors.blue,
+        backgroundColor: Color(0xFF0097A7),
+        foregroundColor: Colors.white,
         actions: [
           IconButton(
             icon: const Icon(Icons.add, color: Colors.white),

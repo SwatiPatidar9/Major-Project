@@ -22,7 +22,8 @@ class _AddEmployeePageState extends State<AddEmployeePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Add Employee"),
-        backgroundColor: Colors.blue,
+        backgroundColor: Color(0xFF0097A7),
+        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
@@ -60,7 +61,7 @@ class _AddEmployeePageState extends State<AddEmployeePage> {
                   }
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: Color(0xFF0097A7),
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),

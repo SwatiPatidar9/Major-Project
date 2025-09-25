@@ -39,7 +39,8 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Attendance"),
-        backgroundColor: Colors.blue,
+        backgroundColor: Color(0xFF0097A7),
+        foregroundColor: Colors.white,
       ),
       body: Column(
         children: [
@@ -91,7 +92,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
             onPressed: (){},
            // onPressed: _markTodayAttendance,
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.blue,
+              backgroundColor:Color(0xFF0097A7),
               padding: const EdgeInsets.symmetric(vertical: 14),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
@@ -99,7 +100,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
             ),
             child: const Text(
               "Mark Attendance",
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              style: TextStyle(color:Colors.white,fontSize: 16, fontWeight: FontWeight.bold),
             ),
           ),
         ),

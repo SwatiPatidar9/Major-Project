@@ -10,8 +10,8 @@ class LoginScreen extends StatelessWidget {
   final controller = Get.put(LoginController());
 
   final emailController =
-  TextEditingController(text: 'shubhamevolve20@gmail.com');
-  final passwordController = TextEditingController(text: "Shubham@123");
+  TextEditingController(text: 'swati@gmail.com');
+  final passwordController = TextEditingController(text: "swati@123");
 
   final RxBool isPasswordVisible = false.obs;
 

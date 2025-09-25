@@ -132,7 +132,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         type: BottomNavigationBarType.fixed,
         currentIndex: _selectedIndex,
         onTap: _onBottomNavTapped,
-        selectedItemColor: Colors.red,
+        selectedItemColor:Color(0xFF0097A7),
         unselectedItemColor: Colors.grey,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
