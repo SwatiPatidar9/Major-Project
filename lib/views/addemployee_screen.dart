@@ -21,8 +21,8 @@ class _AddEmployeePageState extends State<AddEmployeePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Basic Details Form"),
-        backgroundColor: Colors.green,
+        title: const Text("Add Employee"),
+        backgroundColor: Colors.blue,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
@@ -32,22 +32,20 @@ class _AddEmployeePageState extends State<AddEmployeePage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
 
-              buildInputField("Full Name", nameController),
+              buildInputField("Employee Name", nameController),
               const SizedBox(height: 12),
-
+              buildInputField("Employee ID", idController),
+              const SizedBox(height: 12),
               buildInputField("Mobile Number", mobileController,
                   keyboardType: TextInputType.phone),
               const SizedBox(height: 12),
 
-              buildInputField("Email", emailController,
+              buildInputField("Email ID", emailController,
                   keyboardType: TextInputType.emailAddress),
               const SizedBox(height: 12),
 
               buildInputField("Password", passwordController,
                   obscureText: true),
-              const SizedBox(height: 12),
-
-              buildInputField("ID Number", idController),
               const SizedBox(height: 12),
 
               buildInputField("Address", addressController, maxLines: 3),
@@ -62,7 +60,7 @@ class _AddEmployeePageState extends State<AddEmployeePage> {
                   }
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
+                  backgroundColor: Colors.blue,
                   padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),

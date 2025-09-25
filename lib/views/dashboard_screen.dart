@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'attendance_screen.dart';
 import 'employee_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -43,7 +44,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       case "Attendance":
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (_) => const Attendance()),
+          MaterialPageRoute(builder: (_) => const AttendanceScreen()),
         );
         break;
       case "Employee":
@@ -170,17 +171,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 }
 
 
-class Attendance extends StatelessWidget {
-  const Attendance({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("Attendance")),
-      body: const Center(child: Text("This is the Attendance Page")),
-    );
-  }
-}
 
 /*
 // // Dummy DashboardScreen for testing

@@ -82,7 +82,13 @@ class _EmployeeTablePageState extends State<EmployeeTablePage> {
             icon: const Icon(Icons.add, color: Colors.white),
             onPressed: () {
               // Navigate to Add Employee Page
-              Get.to(() => const AddEmployeePage());
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AddEmployeePage(),
+                ),
+              );
+
             },
           ),
         ],
@@ -154,8 +160,13 @@ class _EmployeeTablePageState extends State<EmployeeTablePage> {
                             icon: const Icon(Icons.edit,
                                 size: 20, color: Colors.blue),
                             onPressed: () {
-                              Get.to(() =>
-                                  EditEmployeePage(employee: emp));
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const AddEmployeePage(),
+                                ),
+                              );
+
                             },
                           ),
                         ],
