@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'addemployee_screen.dart';
+
 // Dummy Employee Model
 class Employee {
   final int id;
@@ -190,18 +192,8 @@ class _EmployeeTablePageState extends State<EmployeeTablePage> {
   }
 }
 
-// Dummy Add Employee Page
-class AddEmployeePage extends StatelessWidget {
-  const AddEmployeePage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("Add Employee")),
-      body: const Center(child: Text("Add Employee Form here")),
-    );
-  }
-}
+
 
 // Dummy Edit Employee Page
 class EditEmployeePage extends StatelessWidget {
